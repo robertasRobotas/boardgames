@@ -10,6 +10,7 @@ const Card = ({
   ratingsNumber,
   weight,
   gameImageUrl,
+  maxPlayers,
 }: Game) => {
   return (
     <div className={styles.wrapper}>
@@ -37,6 +38,11 @@ const Card = ({
       <div>
         <span>Dificulty: </span>
         <span>{weight}</span>
+      </div>
+
+      <div>
+        <span>Max players: </span>
+        <span>{maxPlayers}</span>
       </div>
     </div>
   );
